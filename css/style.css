@@ -59,6 +59,7 @@ body {
 
 .head {
     border-bottom: 1px solid var(--footer-text);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .head-nav {
@@ -133,6 +134,11 @@ body {
 
 .main {
     background-color: var(--primary-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/people-office-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -172,6 +178,10 @@ body {
     border-style: none;
 }
 
+.btn:hover {
+    background-color: var(--background-buttton);
+}
+
 .hero-btn {
     padding: 16px 32px;
     margin-top: 48px;
@@ -188,6 +198,23 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
 }
+
+.icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--back-team);
+    height: 112px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+
+.icon-pic {
+    height: 64px;
+    width: 64px;
+}
+
 
 .section-topic {
     position: absolute;
@@ -320,13 +347,103 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    
+    margin-bottom: 8px;
 }
 
 
 .section-ul {
     list-style: none;
 }
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+
+
+.soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.soc-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-color);
+    
+}
+
+.soc-link:hover {
+    background-color: var(--background-buttton);
+}
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+
+    padding-top: 130px;
+    margin-bottom: 72px
+}
+
+
+
+.company-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+
+
+.company-item {
+    width: 168px;
+    height: 88px;
+}
+
+
+
+
+.company-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    border: 1px solid #afb1b8;
+    padding: 16px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.company-link:hover {
+    border-color: #404bbf;
+}
+
+.company-link:hover .company-logo {
+    fill: #404bbf;
+}
+
+
+.company-logo {
+    fill: #8e8f99;
+    display: flex;
+
+}
+
+.company-logo:hover {
+    fill: var(--background-buttton)
+}
+
 
 
 /*------------------------FOOTER--------------------------*/
@@ -370,6 +487,61 @@ body {
     color: var(--footer-text);
     margin-top: 17px;
 }
+
+
+.foot-media {
+    display: flex;
+    gap: 120px;
+}
+
+
+
+.footer-soc-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-back);
+
+    margin-bottom: 16px;
+}
+
+.footer-list-contacts {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-soc-list {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.footer-soc-link {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #31d0aa;
+
+}
+
+.footer-soc-item {
+    display: block;
+    cursor: pointer;
+}
+
 
 
 /*------------------------PORTFOLIO--------------------------*/
